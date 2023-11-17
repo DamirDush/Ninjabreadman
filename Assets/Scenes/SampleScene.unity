@@ -356,7 +356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_Name
-      value: Plataforma (3)
+      value: Plataforma3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_TagString
@@ -1024,7 +1028,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_Name
-      value: Plataforma (1)
+      value: Plataforma1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_TagString
@@ -1055,7 +1063,7 @@ GameObject:
   - component: {fileID: 647499995}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1428,7 +1436,7 @@ GameObject:
   - component: {fileID: 880199564}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2000,7 +2008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_Name
-      value: Plataforma (2)
+      value: Plataforma2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_TagString
@@ -2195,9 +2207,9 @@ GameObject:
   - component: {fileID: 1668851946}
   - component: {fileID: 1668851949}
   - component: {fileID: 1668851948}
-  - component: {fileID: 1668851950}
   - component: {fileID: 1668851951}
   - component: {fileID: 1668851952}
+  - component: {fileID: 1668851953}
   m_Layer: 0
   m_Name: Ninja
   m_TagString: Untagged
@@ -2265,7 +2277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668851945}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.81, y: 1.45, z: 0}
+  m_LocalPosition: {x: 0.27, y: -3.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2320,22 +2332,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6877758, y: 1.2941408}
   m_EdgeRadius: 0
---- !u!114 &1668851950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668851945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3ea06ba8d6543f4a84a0d9e21db4121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  grounded: 1
-  jumpPower: 6.5
-  maxSpeed: 6
 --- !u!95 &1668851951
 Animator:
   serializedVersion: 5
@@ -2372,6 +2368,22 @@ MonoBehaviour:
   controladorGolpe: {fileID: 0}
   radioGolpe: 0
   "da\xF1oGolpe": 0
+--- !u!114 &1668851953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668851945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca24afb0ef3f314d82c2c2f9132b1de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &1735357327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,7 +3005,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_Name
-      value: Plataforma
+      value: Plataforma0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8477640320215873533, guid: c82fb0c5b23ddac499c32ba7c7bc5427, type: 3}
       propertyPath: m_TagString
