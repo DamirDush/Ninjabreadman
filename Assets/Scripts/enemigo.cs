@@ -13,9 +13,9 @@ public class enemigo : MonoBehaviour
         animator = GetComponent<Animator>();    
     }
 
-    public void TomarDano(float dano)
+    public void TomarDaño(float daño)
     {
-        vida -= dano;
+        vida -= daño;
 
         if(vida <= 0)
         {

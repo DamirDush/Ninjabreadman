@@ -26,7 +26,7 @@ public class ataque : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+                colisionador.transform.GetComponent<enemigo>().TomarDaño(dañoGolpe);
             }
 
         }

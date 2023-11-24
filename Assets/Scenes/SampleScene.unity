@@ -539,6 +539,7 @@ GameObject:
   - component: {fileID: 346833419}
   - component: {fileID: 346833418}
   - component: {fileID: 346833417}
+  - component: {fileID: 346833422}
   m_Layer: 0
   m_Name: Dona01
   m_TagString: Enemigo
@@ -681,6 +682,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &346833422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346833416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003f023211b17cd4fbb1a2722d74fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 0
 --- !u!1001 &363800014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1715,6 +1729,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 926677cf14a88c14c9efbfd951edc95e, type: 3}
+--- !u!1 &1180887706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5387453874429809754, guid: 21015b2de3742944e9d6963a966ec208, type: 3}
+  m_PrefabInstance: {fileID: 1816099556423466993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1180887712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180887706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003f023211b17cd4fbb1a2722d74fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 0
 --- !u!1 &1233217949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,7 +2254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540146322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.29, y: 0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2476,8 +2508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cac08ea34b6f64ba33a48c9f5a9be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controladorGolpe: {fileID: 0}
-  radioGolpe: 0
+  controladorGolpe: {fileID: 1540146323}
+  radioGolpe: 0.5
   "da\xF1oGolpe": 0
 --- !u!114 &1668851953
 MonoBehaviour:
@@ -2508,6 +2540,7 @@ GameObject:
   - component: {fileID: 1735357328}
   - component: {fileID: 1735357332}
   - component: {fileID: 1735357331}
+  - component: {fileID: 1735357333}
   m_Layer: 0
   m_Name: Pan01
   m_TagString: Enemigo
@@ -2650,6 +2683,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8509715, y: 1.3484616}
   m_EdgeRadius: 0
+--- !u!114 &1735357333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735357327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003f023211b17cd4fbb1a2722d74fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 0
 --- !u!1 &1957515629
 GameObject:
   m_ObjectHideFlags: 0
