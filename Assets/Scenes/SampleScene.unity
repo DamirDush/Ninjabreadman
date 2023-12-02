@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003f023211b17cd4fbb1a2722d74fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 0
+  vida: 20
 --- !u!1001 &363800014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2509,8 +2509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorGolpe: {fileID: 1540146323}
-  radioGolpe: 0.5
-  "da\xF1oGolpe": 0
+  radioGolpe: 0.3
+  "da\xF1oGolpe": 10
 --- !u!114 &1668851953
 MonoBehaviour:
   m_ObjectHideFlags: 0
